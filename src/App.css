@@ -38,22 +38,42 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
 
 body {
-  font-family: "Roboto Condesed" sans-serif;
+  font-family: "Roboto Condesed", sans-serif;
 }
 
 :root {
   --primary-white: #fff;
   --primary-orange: #f9ab00;
   --primary-dark: rgba(255, 255, 255, 0);
+  --primary-red: #ef4035;
+  --primary-hover-red:#f33501;
 }
 
 /*******************NAVBAR*********************/
-.logo {
-  width: 16.25rem;
+
+nav {
+  z-index: 2;
 }
 
+.logo {
+  width: 12.25rem;
+  height: 6.25rem;
+  opacity: 0.9;
+}
+
+.navbar-name {
+  font-size: 2.75rem;
+  font-family: 'Orbitron', sans-serif;
+  background: #DF4437;
+background: -webkit-linear-gradient(to bottom, #DF4437 0%, #e08c16 66%, #E8E622 100%);
+background: -moz-linear-gradient(to bottom, #DF4437 0%, #e08c16 66%, #E8E622 100%);
+background: linear-gradient(to bottom, #DF4437 0%, #e08c16 66%, #E8E622 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
 /**--MENU LINKS---**/
 
 nav a.nav-link {
@@ -89,4 +109,93 @@ nav ul li {
 
 .toggler {
   color: #fff;
+}
+
+@media(max-width: 768px){
+  .navbar-brand {
+    width: 7rem;
+    height: 5rem !important;
+  }
+
+  .logo {
+    width: 7.25rem;
+    height: 5.25rem;
+  }
+}
+
+/*******************HEADER*********************/
+
+.header-wrapper {
+  position: relative;
+  background: url("./Assets/Images/laptop-background.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.header-main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condesed", sans-serif;
+  z-index: 1;
+}
+
+.header-main-info h1 {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+
+
+.header-typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+
+@media(max-width: 768px){
+  .header-main-info h1 {
+    font-size: 1.8rem !important;
+  }
+
+  .header-typed-text {
+    font-size: 1.3rem!important;
+  }
+}
+
+.header-btn-main-offer {
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+  text-decoration: none;
+}
+
+.header-btn-main-offer:hover {
+  background: var(--primary-hover-red);
+  color: var(--primary-white);
+  transition: .2s ease-in-out;
+}
+
+/**---PARTICLES JS---**/
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media(max-width: 768px){
+  .App-particles {
+    display: none;
+  }
 }
