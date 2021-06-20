@@ -6,6 +6,7 @@ function Header() {
     return (
         <div className="header-wrapper">
             <div className="header-main-info">
+                <canvas></canvas>
                 <h1>Vamos Flamengo</h1>
                 <Typed 
                     className="header-typed-text"

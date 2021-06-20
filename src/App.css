@@ -41,7 +41,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
 
 body {
-  font-family: "Roboto Condesed", sans-serif;
+  font-family: "Roboto Condensed", sans-serif!important;
 }
 
 :root {
@@ -144,7 +144,6 @@ nav ul li {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: "Roboto Condesed", sans-serif;
   z-index: 1;
 }
 
@@ -181,9 +180,9 @@ nav ul li {
 }
 
 .header-btn-main-offer:hover {
-  background: var(--primary-hover-red);
+  background-color: var(--primary-hover-red);
   color: var(--primary-white);
-  transition: .2s ease-in-out;
+  transition:  .2s ease-in-out;
 }
 
 /**---PARTICLES JS---**/
@@ -194,8 +193,35 @@ nav ul li {
   z-index: 1;
 }
 
-@media(max-width: 768px){
-  .App-particles {
+@media(max-width: 768px) {
+  .particles-canvas {
     display: none;
+  }
+}
+
+/******************* ABOUT ME *********************/
+
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem!important;
+}
+
+.about-img {
+  width: 16rem;
+  border-radius: 50%;
+  padding: .3rem;
+  border: 1px solid var(--primary-orange);
+}
+
+.about-heading {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+
+@media(max-width: 468px){
+  .about-img {
+    width: 10rem;
   }
 }
