@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import EmailJS from 'emailjs-com';
 import { useForm } from "react-hook-form";
-import Secrets from "../../secrets/Secrets";
+import Secrets from "../secrets/Secrets";
 
 function Contacts() {
 

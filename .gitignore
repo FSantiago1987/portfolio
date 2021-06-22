@@ -9,8 +9,8 @@
 /coverage
 
 # secrets
-/Secrets
-.Secrets.js
+/src/Secrets
+*.Secrets.js
 
 # production
 /build
