@@ -62,7 +62,9 @@ body {
 
 nav {
   z-index: 2;
+  background: var(--primary-black);
 }
+
 
 .logo {
   width: 12.25rem;
@@ -74,11 +76,11 @@ nav {
   font-size: 2.75rem;
   font-family: 'Orbitron', sans-serif;
   background: #DF4437;
-background: -webkit-linear-gradient(to bottom, #DF4437 0%, #e08c16 66%, #E8E622 100%);
-background: -moz-linear-gradient(to bottom, #DF4437 0%, #e08c16 66%, #E8E622 100%);
-background: linear-gradient(to bottom, #DF4437 0%, #e08c16 66%, #E8E622 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(to bottom, #DF4437 0%, #e08c16 66%, #E8E622 100%);
+  background: -moz-linear-gradient(to bottom, #DF4437 0%, #e08c16 66%, #E8E622 100%);
+  background: linear-gradient(to bottom, #DF4437 0%, #e08c16 66%, #E8E622 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /**--MENU LINKS---**/
 
@@ -95,7 +97,8 @@ nav ul li {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-white) !important;
-  border-top: 0.1875rem solid var(--primary-dark);
+  border-top: 0.1875rem solid var(--primary-black)	;
+  ;
 }
 
 .navbar-brand {
@@ -136,7 +139,7 @@ nav ul li {
   background: url("./Assets/Images/laptop-background.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .header-main-info {
@@ -440,6 +443,10 @@ nav ul li {
   cursor: pointer;
 }
 
+.popupbox-wrapper {
+  margin-top: 8rem;
+}
+
 .portfolio-image-popupbox {
   width: 45rem;
   padding: 0 0.5rem;
@@ -640,4 +647,27 @@ input:focus+.line, textarea:focus+.line {
   .contacts p {
     padding: 0 0.4rem;
   }
+}
+
+/******************* FOOTER *********************/
+
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-dark-gray);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-dark-gray);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-orange);
+  cursor: pointer;
+}
+
+.footer p {
+  margin-bottom: 0;
 }

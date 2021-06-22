@@ -4,7 +4,7 @@ import Typed from 'react-typed';
 
 function Header() {
     return (
-        <div className="header-wrapper">
+        <div id="home" className="header-wrapper">
             <div className="header-main-info">
                 <canvas></canvas>
                 <h1>Vamos Flamengo</h1>
