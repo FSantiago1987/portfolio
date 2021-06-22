@@ -55,6 +55,7 @@ body {
   --primary-dark-gray: #666666;
   --primary-black: #000000;
   --primary-transparent-black: rgba(0, 0, 0, 0.7);
+  --primary-green: green;
 }
 
 /*******************NAVBAR*********************/
@@ -223,6 +224,7 @@ nav ul li {
 .about-heading {
   color: var(--primary-orange);
   text-transform: uppercase;
+  text-align: center;
 }
 
 @media(max-width: 468px){
@@ -237,10 +239,12 @@ nav ul li {
   text-align: center;
   padding-bottom: 2rem;
   background: var(--primary-light-gray);
+  color: var(--primary-dark);
+  text-transform: uppercase;
 }
 
-.services {
-  color: var(--primary-dark);
+.services h1 {
+  color: var(--primary-orange);
   text-transform: uppercase;
 }
 
@@ -288,7 +292,7 @@ nav ul li {
   color: var(--primary-white);
 }
 
-/******************* EXPERIENCE *********************/
+/******************* EXPERIENCES *********************/
 
 .experience {
   padding: 0.7rem;
@@ -540,4 +544,100 @@ nav ul li {
 .carousel-root {
   margin: auto !important;
   margin-top: 3% !important;
+}
+
+/******************* CONTACT ME *********************/
+
+.contacts {
+  background: var(--primary-dark);
+  padding: 3rem 0;
+}
+
+.contacts h1 {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+  padding: 1.3rem 0;
+}
+
+.contacts p {
+  color: var(--primary-light-gray);
+  font-size: 1.2rem;
+}
+
+/* ----------- INPUTS -----------------*/
+.contacts input, .contacts textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 0.125rem solid var(--primary-dark-gray);
+  border-radius: 0;
+  color: var(--primary-orange);
+  outline: 0 !important;
+  box-shadow: none !important;
+  padding-left: 0!important;
+}
+
+.contacts .container {
+  padding: 4rem 0;
+}
+
+.contacts input:focus, .contacts textarea:focus {
+  background: transparent;
+  color: var(--primary-orange);
+  border-bottom: 0.125rem solid var(--primary-dark-gray);
+}
+
+.contacts textarea {
+  height: 12.19rem!important;
+}
+
+.contact-btn {
+  margin: 1rem 0 0 20%;
+  width: 60%;
+  background: none;
+}
+
+input.form-control, textarea.form-control {
+  margin: -0.3rem 0!important;
+}
+
+.line {
+  position: relative;
+  width: 0;
+  height: 0.125rem;
+  top: -0.8rem;
+  background: var(--primary-orange);
+  display: inline-block;
+}
+
+input:focus+.line, textarea:focus+.line {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+.error-message {
+  color: var(--primary-white);
+  background: var(--primary-orange);
+  text-align: left;
+}
+
+.success-message {
+  font-weight: 900;
+  color: var(--primary-green);
+}
+
+@media(max-width: 768px){
+
+  .contacts {
+    overflow-x: hidden;
+  }
+  .contacts .container {
+    padding: 0 1rem;
+  }
+
+  .contacts p {
+    padding: 0 0.4rem;
+  }
 }
