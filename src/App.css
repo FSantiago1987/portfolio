@@ -159,6 +159,9 @@ nav ul li {
 .header-main-info h1 {
   color: var(--primary-orange);
   text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 3rem;
 }
 
 
@@ -230,6 +233,14 @@ nav ul li {
   text-align: center;
 }
 
+.about-description{
+  align-items: center;
+  text-align: justify;
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  line-height: 2rem;
+}
+
 @media(max-width: 468px){
   .about-img {
     width: 10rem;
@@ -246,9 +257,21 @@ nav ul li {
   text-transform: uppercase;
 }
 
+.row{
+  justify-content: center!important;
+}
+
 .services h1 {
   color: var(--primary-orange);
   text-transform: uppercase;
+}
+
+.services h3 {
+  margin-top: 15px;
+}
+
+.services p {
+  margin-top: 25px;
 }
 
 .services .circle {
@@ -322,6 +345,16 @@ nav ul li {
 .experience h1 {
   text-transform: uppercase;
   color: var(--primary-orange);
+}
+
+.experience h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.experience p {
+  text-align: justify;
 }
 
 
@@ -400,7 +433,10 @@ nav ul li {
 
 
 .portfolio-image {
+  object-fit: contain;
   width: 15rem;
+  height: 8rem;
+  overflow: hidden;
   border: 1px solid var(--primary-orange);
   padding: 0 0.5rem;
 }
@@ -449,7 +485,16 @@ nav ul li {
 
 .portfolio-image-popupbox {
   width: 45rem;
-  padding: 0 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-project {
+  margin-left: 5px!important;
+}
+
+.description-project{
+  margin-top: 5px!important;
 }
 
 .hyper-link {
@@ -465,6 +510,10 @@ nav ul li {
   .portfolio-image-popupbox {
     width: 100%;
   }
+
+  .portfolio-image-popupbox > p {
+    font-size: 10px;
+  }
 }
 
 @media(max-height: 570px){
@@ -474,6 +523,10 @@ nav ul li {
   }
   .portfolio-image-popupbox {
     width: 50%;
+  }
+
+  .portfolio-image-popupbox > p {
+    font-size: 10px;
   }
 }
 

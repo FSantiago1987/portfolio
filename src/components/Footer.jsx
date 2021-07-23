@@ -18,10 +18,10 @@ function Footer() {
                <div className="row">
                    <div className="col-lg-4 col-md-6 col-sm-6">
                        <div className="d-flex">
-                           <p>Toronto - Main Street</p>
+                           <p>Toronto - Canada</p>
                        </div>
                        <div className="d-flex">
-                           <a href="tel:555-555-5555">+1 (555)555-5555</a>
+                           <a href="tel:647-819-6254">+1 (647)819-6254</a>
                        </div>
                        <div className="d-flex">
                            <p>rawpower_br@hotmail.com</p>

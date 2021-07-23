@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faGoogle } from '@fortawesome/free-brands-svg-icons';
-import { faDesktop, faFileCode } from '@fortawesome/free-solid-svg-icons'
+import { faDesktop, faFileCode, faMobileAlt } from '@fortawesome/free-solid-svg-icons'
 
 function Services() {
     return (
@@ -15,7 +15,7 @@ function Services() {
                                     <FontAwesomeIcon className="icon" icon={faDesktop} size="2x"/>
                                 </div>
                                 <h3>Web Design</h3>
-                                <p>AHUAS dsadsuidsadasfs safsfsafsfsa asfsafsfasfsafa</p>
+                                <p>Bring your ideas to life with our web design services.</p>
                             </div>
                         </div>
                         {/* - */}
@@ -24,30 +24,22 @@ function Services() {
                                 <div className="circle">
                                     <FontAwesomeIcon className="icon" icon={faFileCode} size="2x"/>
                                 </div>
-                                <h3>Web Development</h3>
-                                <p>AHUAS dsadsuidsadasfs safsfsafsfsa asfsafsfasfsafa</p>
+                                <h3>Modern Technologies</h3>
+                                <p>We use modern technologies to build your website.</p>
                             </div>
                         </div>
                         {/* - */}
                         <div className="col-lg-3 col-md-6 col-sm-6">
                             <div className="box">
                                 <div className="circle">
-                                    <FontAwesomeIcon className="icon" icon={faGoogle} size="2x"/>
+                                    <FontAwesomeIcon className="icon" icon={faMobileAlt} size="2x"/>
                                 </div>
-                                <h3>Google Ads</h3>
-                                <p>AHUAS dsadsuidsadasfs safsfsafsfsa asfsafsfasfsafa</p>
+                                <h3>Mobile Friendly</h3>
+                                <p>Website completly mobile responsive.</p>
                             </div>
                         </div>
                         {/* - */}
-                        <div className="col-lg-3 col-md-6 col-sm-6">
-                            <div className="box">
-                                <div className="circle">
-                                    <FontAwesomeIcon className="icon" icon={faFacebookF} size="2x"/>
-                                </div>
-                                <h3>Facebook Ads</h3>
-                                <p>AHUAS dsadsuidsadasfs safsfsafsfsa asfsafsfasfsafa</p>
-                            </div>
-                        </div>
+
                         {/* - */}
                     </div>
                 </div>
